@@ -1,6 +1,6 @@
 // HanzAi - AI Assistant
 // Gemini API Configuration
-const GEMINI_API_KEY = "AIzaSyAOqbJMz_1IhgHKT1UjX08T9ydr8qbchsY";
+const GEMINI_API_KEY = "AQ.Ab8RN6KU3Vy6m6n2WsvGuyrOA6zPVxq6BzCEtVmEjRHMh-8aXw";
 const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
 // State Management

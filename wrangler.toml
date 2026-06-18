@@ -1,0 +1,29 @@
+name = "hanzai"
+main = "src/index.js"
+type = "javascript"
+account_id = "YOUR_ACCOUNT_ID"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[env.development]
+vars = { ENVIRONMENT = "development" }
+
+[build]
+command = "npm install && npm run build"
+cwd = "./frontend"
+watch_paths = ["src/**/*.jsx"]
+
+[build.upload]
+format = "modules"
+main = "./dist/index.js"
+
+[triggers]
+crons = []
+
+[[unsafe.bindings]]
+name = "HANZAI_API"
+type = "fetcher"

@@ -5,12 +5,21 @@ backend/*.db
 backend/.env
 backend/.DS_Store
 backend/dist/
+backend/build/
 
 # Frontend
 frontend/node_modules/
 frontend/dist/
 frontend/.env
+frontend/.env.local
 frontend/.DS_Store
+frontend/build/
+
+# Cloudflare
+wrangler.toml
+*.wrangler.toml
+.wrangler/
+wrangler-dist/
 
 # IDE
 .vscode/
@@ -19,7 +28,34 @@ frontend/.DS_Store
 *.swo
 *~
 .DS_Store
+*.iml
 
 # OS
 .DS_Store
 Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+pip-cache/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Misc
+dist/
+build/
+*.bak
+.cache/
